@@ -1,0 +1,112 @@
+/* pokedex.css */
+
+/* Lista de Pokémon */
+.pokemons {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cartão de cada Pokémon */
+.pokemon {
+    background: linear-gradient(135deg, #ffffff, #f1f3f8);
+    border-radius: 1rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon .number {
+    color: #777;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+.pokemon .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+/* Detalhes de Pokémon */
+.pokemon .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon .detail img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.pokemon .detail .types {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pokemon .detail .types .type {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    filter: brightness(1.1);
+}
+
+/* Tipos de Pokémon */
+.normal { background-color: #a8a878; }
+.grass { background-color: #78c850; }
+.fire { background-color: #f08030; }
+.water { background-color: #6890f0; }
+.electric { background-color: #f8d030; }
+.ice { background-color: #98d8d8; }
+.ground { background-color: #e0c068; }
+.flying { background-color: #a890f0; }
+.poison { background-color: #a040a0; }
+.fighting { background-color: #c03028; }
+.psychic { background-color: #f85888; }
+.dark { background-color: #705848; }
+.rock { background-color: #b8a038; }
+.bug { background-color: #a8b820; }
+.ghost { background-color: #705898; }
+.steel { background-color: #b8b8d0; }
+.dragon { background-color: #7038f8; }
+.fairy { background-color: #f0b6bc; }
+
+/* Botão de paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pagination button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:hover {
+    background-color: #5563c1;
+}

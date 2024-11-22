@@ -1,0 +1,42 @@
+/* global.css */
+
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Reset de estilos */
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f9fafe;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.content {
+    width: 100vw;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+/* Botões gerais */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
